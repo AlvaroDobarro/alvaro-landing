@@ -22,69 +22,7 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Álvaro Dobarro — Desarrollo Web & IA", "description": "Desarrollo web rápido, optimizado y apoyado en IA. Primera sesión gratuita.", "url": "https://TU_USUARIO.github.io/TU_REPO/", "areaServed": "ES", "inLanguage": "es", "knowsAbout": ["Desarrollo web", "JavaScript", "React", "Node.js", "Automatización con IA", "Optimización"], "sameAs": ["https://github.com/TU_USUARIO"], "dateModified": "2025-08-19T09:41:58.987091Z"}</script>
 
   <!-- Styles: all CSS here, clean & responsive -->
-  <style>
-    /* Base styles */
-    :root { --bg:#0b0d12; --text:#e7e9ee; --muted:#a6adbb; --brand:#0077ff; --card:#12151d; --card2:#171b24; --ok:#19c37d; --warn:#f5a524; }
-    * { box-sizing: border-box; }
-    html,body { margin:0; padding:0; }
-    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif; background: var(--bg); color: var(--text); }
-    a { color: var(--brand); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    img { max-width: 100%; height: auto; display: block; }
-    .container { width: min(1100px, 92%); margin: 0 auto; }
-    .btn { display:inline-block; background: var(--brand); color:#fff; padding: 12px 20px; border-radius:10px; font-weight:600; transition: transform .05s ease; }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-outline { background: transparent; border: 2px solid var(--brand); color: var(--text); }
-    .grid { display:grid; gap:18px; }
-    .card { background: linear-gradient(180deg, var(--card), var(--card2)); border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:18px; }
-    .muted { color: var(--muted); }
-    .center { text-align:center; }
-
-    /* Header / hero */
-    header.hero { padding: 56px 0 28px; border-bottom: 1px solid rgba(255,255,255,.06); }
-    .hero h1 { font-size: clamp(28px, 5vw, 44px); margin:0 0 8px; line-height:1.15; }
-    .hero p.lead { margin:10px 0 18px; font-size: clamp(16px, 2.5vw, 20px); color: var(--muted); }
-    .hero-cta { display:flex; gap:12px; flex-wrap: wrap; }
-    .hero .meta { display:flex; gap:14px; flex-wrap: wrap; margin-top: 10px; }
-    .badge { font-size: 13px; color:#cbd5e1; border:1px solid rgba(255,255,255,.12); padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.03); }
-
-    /* Sections */
-    section { padding: 36px 0; }
-    h2.section-title { font-size: clamp(22px, 4vw, 30px); margin: 0 0 14px; }
-    .section-sub { margin: -6px 0 18px; color: var(--muted); }
-
-    /* Services */
-    .services { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-    .service h3 { margin:6px 0 6px; font-size: 18px; }
-    .service p { margin:0; color: var(--muted); font-size: 15px; }
-
-    /* Portfolio */
-    .portfolio { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-    .project h3 { margin:8px 0 6px; font-size: 17px; }
-    .project p { margin:0; color: var(--muted); font-size: 14px; }
-    .taglist { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
-    .tag { font-size: 12px; padding:5px 8px; border-radius:999px; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); color:#cbd5e1; }
-
-    /* Process */
-    .steps { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); counter-reset: step; }
-    .step { position: relative; padding-top: 10px; }
-    .step h3::before { counter-increment: step; content: counter(step); display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; margin-right:8px; border-radius:999px; background: var(--brand); color:#fff; font-weight:700; }
-
-    /* Pricing */
-    .pricing { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-    .price .amount { font-size: 28px; font-weight: 800; }
-    .price ul { margin:10px 0 0; padding-left: 16px; color: var(--muted); }
-    .price li { margin:6px 0; }
-
-    /* Contact */
-    form { display:grid; gap:12px; max-width: 640px; margin: 0 auto; }
-    input, textarea { width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,.12); background:#0f1219; color:#e5e7eb; }
-    input::placeholder, textarea::placeholder { color:#94a3b8; }
-    .legal { font-size: 12px; color:#94a3b8; margin-top: 10px; line-height:1.4; }
-
-    /* Footer */
-    footer { padding: 22px 0 40px; border-top: 1px solid rgba(255,255,255,.06); color:#94a3b8; }
-  </style>
+  
 </head>
 <body>
   <!-- Header / hero -->
@@ -258,5 +196,30 @@
       });
     });
   </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Álvaro Landing</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Landing Page de Álvaro</h1>
+    <p>Desarrollo Web & IA</p>
+  </header>
+
+  <main class="container">
+    <section id="intro">
+      <h2>Bienvenido</h2>
+      <p>Esta es mi landing de ejemplo dentro de <code>alvaro-landing/</code>.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© <span id="year"></span> Álvaro — Landing</small>
+  </footer>
+  <script src="./script.js"></script>
+
+
 </body>
 </html>
